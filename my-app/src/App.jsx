@@ -6,8 +6,17 @@ import Card from "./components/Card.jsx"
 import Button from "./components/Button.jsx"
 import Student from "./components/Student.jsx"
 import UserGreeting from "./components/UserGreeting.jsx"
+import List from "./components/List.jsx"
 
 function App() {
+
+    //TODO - Continue Bro Code video - 1:19:57
+
+    const fruits = [{id:1 ,name:"apple", calories: 95},
+            {id: 2, name:"orange", calories: 45},
+            {id: 3, name: "banana", calories: 105}, 
+            {id: 4, name:"mango", calories: 100}];
+    
 
     return(
       
@@ -31,6 +40,7 @@ function App() {
         <Student name="Patrick" age={42} isStudent={false}> </Student>
         <Student> </Student>
 
+        <List items ={fruits} category = "Fruits"> </List>
         </>
     );
 }
