@@ -32,3 +32,27 @@
   color: hsl(0, 0%, 0%);
 }
 
+.student{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.welcome-message {
+  font-size: 2.5em;
+  background: rgba(19, 167, 0, 0.329);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.login-prompt {
+  font-size: 2.5em;
+  background: rgba(168, 0, 0, 0.329);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
