@@ -14,11 +14,26 @@ function Button() {
         cursor: "pointer",
     }
 
+    // const handleClick = () => {
+    //     console.log("Button clicked!");
+    // }
+
+    // const handleClick2 = (name = "Default Name") => {
+    //     console.log("Stop clicking me! " + name);
+    // }
+
+    const handleClick = (e) => {
+        e.target.textContent = "Clicked!";
+        console.log(e);
+    }
+
     // If using Modules:
     // return (<button className = {stlyes.button}>Click me</button>)
     // styles.button creates a hash so it has a unique id
 
-    return (<button className={styles}>Click me</button>);
+    //onClick ={() =>} ... When click on button do this, prevents calling function right away or else it will run when the page loads.
+
+    return (<button className={styles} onClick={(e) => handleClick(e)}>Click me</button>);
 }
 
 export default Button

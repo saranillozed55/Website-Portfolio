@@ -7,6 +7,7 @@ import Button from "./components/Button.jsx"
 import Student from "./components/Student.jsx"
 import UserGreeting from "./components/UserGreeting.jsx"
 import List from "./components/List.jsx"
+import HooksPrac from "./components/HooksPrac.jsx"
 
 function App() {
 
@@ -41,6 +42,8 @@ function App() {
         <Student> </Student>
 
         <List items ={fruits} category = "Fruits"> </List>
+        
+        <HooksPrac> </HooksPrac>
         </>
     );
 }
@@ -60,3 +63,7 @@ export default App
 
 
 //Condtional Rendering = control what gets rendered in application based on certain conditions
+
+//React hook - special function that allows functional components to have access to React features without writing
+//class components
+//useState() - allows the creation of a stateful variable AND a setter function to update its value in the virtual DOM.

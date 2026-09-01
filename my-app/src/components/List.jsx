@@ -1,6 +1,6 @@
 
 
-function List({items = [], category}) {
+function List({items = [], category = "No Category"}) {
 
     const itemList = items;
     const itemCategory = category;
