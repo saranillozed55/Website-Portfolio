@@ -8,6 +8,8 @@ import Student from "./components/Student.jsx"
 import UserGreeting from "./components/UserGreeting.jsx"
 import List from "./components/List.jsx"
 import HooksPrac from "./components/HooksPrac.jsx"
+import EventsPrac from "./components/EventsPrac.jsx"
+import ColorPicker from "./components/ColorPicker.jsx"
 
 function App() {
 
@@ -44,6 +46,10 @@ function App() {
         <List items ={fruits} category = "Fruits"> </List>
         
         <HooksPrac> </HooksPrac>
+
+        <EventsPrac> </EventsPrac>
+
+        <ColorPicker></ColorPicker> 
         </>
     );
 }
@@ -67,3 +73,12 @@ export default App
 //React hook - special function that allows functional components to have access to React features without writing
 //class components
 //useState() - allows the creation of a stateful variable AND a setter function to update its value in the virtual DOM.
+
+//onChange = event handler that listens for changes in an input field and updates the state of the variable accordingly.
+//used primarily with form elements ex. <input>, <textarea>, <select>, <radio>, Triggers a function everytime 
+// the value of the input chanes.
+
+//updater function - A function that is passed as an argument to setState() to update the state 
+// ex. setYear(lamda expression) 
+//Allow for safe updates to the state based on the previous state value.
+//Used with multiple state updates and asynchronous functions. SHOULD use updater functions
