@@ -7,6 +7,7 @@ function EventsPrac() {
     const[comment, setComment] = useState("");
     const[payment, setPayment] = useState("");
     const[shipping, setShipping] = useState("");
+    const[car, setCar] = useState({year: 2026, make: "Volkswagen", model: "Tiguan"});
 
     function handleNameChange(event){
         setName(event.target.value);
