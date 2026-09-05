@@ -2,7 +2,6 @@
 import Header from "./components/Header.jsx"
 import Footer from "./components/Footer.jsx"
 import Food from "./components/Food.jsx"
-import Card from "./components/Card.jsx"
 import Button from "./components/Button.jsx"
 import Student from "./components/Student.jsx"
 import UserGreeting from "./components/UserGreeting.jsx"
@@ -11,14 +10,19 @@ import HooksPrac from "./components/HooksPrac.jsx"
 import EventsPrac from "./components/EventsPrac.jsx"
 import ColorPicker from "./components/ColorPicker.jsx"
 
+import Card from "./components/Card.jsx"
+import Introduction from "./components/Introduction.jsx"
+import TopBar from "./components/TopBar.jsx"
+import About from "./components/About.jsx"
+
 function App() {
 
     //TODO - Continue Bro Code video - 1:19:57
 
-    const fruits = [{id:1 ,name:"apple", calories: 95},
-            {id: 2, name:"orange", calories: 45},
-            {id: 3, name: "banana", calories: 105}, 
-            {id: 4, name:"mango", calories: 100}];
+    // const fruits = [{id:1 ,name:"apple", calories: 95},
+    //         {id: 2, name:"orange", calories: 45},
+    //         {id: 3, name: "banana", calories: 105}, 
+    //         {id: 4, name:"mango", calories: 100}];
     
 
     return(
@@ -26,7 +30,7 @@ function App() {
       //add a component
       //Important: Can only return one component unless with add a fragement <> </>
       <>
-        <Footer> </Footer> 
+        {/* <Footer> </Footer> 
 
         <UserGreeting isLoggedIn = {true} userName = "Zed Saranillo"></UserGreeting>
         
@@ -49,7 +53,17 @@ function App() {
 
         <EventsPrac> </EventsPrac>
 
-        <ColorPicker></ColorPicker> 
+        <ColorPicker></ColorPicker>  */}
+
+
+        <TopBar/>
+
+        <div className = "intro-section">
+          <Card/>
+          <Introduction/>
+        </div>
+
+        <About/>
         </>
     );
 }

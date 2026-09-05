@@ -7,6 +7,8 @@ function EventsPrac() {
     const[comment, setComment] = useState("");
     const[payment, setPayment] = useState("");
     const[shipping, setShipping] = useState("");
+
+    //update objects in state
     const[car, setCar] = useState({year: 2026, make: "Volkswagen", model: "Tiguan"});
 
     function handleNameChange(event){
@@ -34,6 +36,21 @@ function EventsPrac() {
 
     function handleShippingChange(event) {
         setShipping(event.target.value);
+    }
+
+    //Update Objects in state
+    function handleYearChange(event) {
+        //... is the spread operator, retain previous properties of 
+        //'car' object and only update the year property to 2025
+        setCar(prevCar => ({...prevCar, year: event.target.value})); 
+    }
+
+    function handleModelChange(event) {
+        setCar(prevCar => ({...prevCar, model: event.target.value}));
+    }
+
+    function handleMakeChange(event) {
+        setCar(prevCar => ({...prevCar, make: event.target.value}));
     }
 
     //Changing the input changes the state of the name variable and updates the virtual DOM.
@@ -64,6 +81,16 @@ function EventsPrac() {
                 Delivery
             </label>
             <p>Shipping: {shipping}</p>
+
+            <div>
+                <p>Your favorite car: {car.make} {car.model} ({car.year})</p>
+                <input type = "number" value = {car.year} onChange = {handleYearChange}/><br/>
+                <input type = "text" value = {car.make} onChange = {handleMakeChange}/><br/>
+                <input type = "text" value = {car.model} onChange = {handleModelChange}/><br/>
+            </div>
+
+
+            
 
         </div>
     );
