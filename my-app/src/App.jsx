@@ -14,6 +14,7 @@ import Card from "./components/Card.jsx"
 import Introduction from "./components/Introduction.jsx"
 import TopBar from "./components/TopBar.jsx"
 import About from "./components/About.jsx"
+import AnimatedBackground from "./components/AnimatedBackground.jsx"
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
 
 
         <TopBar/>
+        <AnimatedBackground/>
 
         <div className = "intro-section">
           <Card/>

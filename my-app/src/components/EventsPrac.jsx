@@ -29,7 +29,6 @@ function EventsPrac() {
         //setCount(prevCOunt => prevCount + 1); if uncommented then it will increment the count by 2 instead of 1
     }
 
-
     function handlePaymentChange(event) {
         setPayment(event.target.value);
     }
@@ -90,7 +89,7 @@ function EventsPrac() {
             </div>
 
 
-            
+
 
         </div>
     );

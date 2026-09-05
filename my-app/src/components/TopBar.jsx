@@ -18,11 +18,9 @@ function TopBar(){
             <div className = "top-bar-right">
                 <a href="https://github.com/saranillozed55" target="_blank" rel="noopener noreferrer" className = "nav-link"> <FaGithub/> </a>
                 <a href ="https://www.linkedin.com/in/zedsaranillo/" target="_blank" rel="noopener noreferrer" className = "nav-link"><FaLinkedin/></a>
-                <a href ="#projects"></a>
+                <a href ="/Zed-Saranillo-Resume.pdf">Resume</a>
             </div>
-        </div>
-        
+        </div>  
     );
-
 } 
 export default TopBar
