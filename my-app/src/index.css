@@ -186,19 +186,54 @@ body {
 
 .nav-link {
   font-family: "Pinocchio", sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   color: white;
   text-decoration: none;
   font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+.nav-link:hover {
+    transform: translateY(-5px);
+}
+
+.nav-link-animation {
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*CSS for profile picture*/
 
+.profile-container {
+  position:relative;
+  width:250px;
+  height:250px;
+}
 .profile-image{
   height: 250px;
   width: 250px;
   border-radius: 20px;
   object-fit: cover;
+}
+.profile-border {
+  position: absolute;
+  top:0;
+  left:0;
+  width:252px;
+  height:252px;
+  pointer-events: none;
 }
 
 /* CSS for about me*/

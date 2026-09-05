@@ -1,10 +1,19 @@
 
 function Footer() {
     return(
+        <svg viewBox = "0 0 500 300">
 
-        <footer>
-            <p>&copy; {new Date().getFullYear()} Your Website name</p>
-        </footer>
+        <rect
+        x = "2"
+        y = "2"
+        fill = "white"
+
+        
+        width = "496"
+        height = "296"
+        />
+
+        </svg>
 
     );
 }
