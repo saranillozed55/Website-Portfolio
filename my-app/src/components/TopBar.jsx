@@ -11,11 +11,10 @@ function TopBar() {
         flex
         items-center
         justify-between
+        w-full
         px-4
         pt-4
-        sm:pt-2
-        md:pt-6
-        lg:pt-6
+        sm:px-2
         
         border-b
         border-white/20
@@ -34,7 +33,10 @@ function TopBar() {
             flex
             items-center
             gap-4
-            pl-32">
+            pl-32
+            sm:pl-8
+            md:pl-16
+            lg:pl-32">
 
                 <motion.a
                     className="nav-link"
@@ -80,7 +82,10 @@ function TopBar() {
             flex
             items-center
             gap-4
-            pr-32
+            pr-4
+            sm:pr-8
+            md:pr-16
+            lg:pr-32
             ">
 
                 <motion.a
