@@ -33,7 +33,6 @@ function TopBar() {
             flex
             items-center
             gap-4
-            pl-32
             sm:pl-8
             md:pl-16
             lg:pl-32">
