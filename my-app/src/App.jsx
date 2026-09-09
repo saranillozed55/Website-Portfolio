@@ -58,6 +58,9 @@ function App() {
         justify-center
         gap-12
         min-h-screen
+        pt-20
+        md:pt-0
+        px-4
         -mt-40
         ">
           <Card/>
