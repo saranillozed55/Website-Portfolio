@@ -1,15 +1,4 @@
 
-import Header from "./components/Header.jsx"
-import Footer from "./components/Footer.jsx"
-import Food from "./components/Food.jsx"
-import Button from "./components/Button.jsx"
-import Student from "./components/Student.jsx"
-import UserGreeting from "./components/UserGreeting.jsx"
-import List from "./components/List.jsx"
-import HooksPrac from "./components/HooksPrac.jsx"
-import EventsPrac from "./components/EventsPrac.jsx"
-import ColorPicker from "./components/ColorPicker.jsx"
-
 import Card from "./components/Card.jsx"
 import Introduction from "./components/Introduction.jsx"
 import TopBar from "./components/TopBar.jsx"
@@ -56,16 +45,41 @@ function App() {
 
         <ColorPicker></ColorPicker>  */}
 
-
+        <div id = "home"/>
         <TopBar/>
         <AnimatedBackground/>
+        
 
-        <div className = "intro-section">
+        <div className ="
+        flex
+        flex-col
+        md:flex-row
+        items-center
+        justify-center
+        gap-12
+        min-h-screen
+        -mt-40
+        ">
           <Card/>
           <Introduction/>
         </div>
 
         <About/>
+        <About/>
+
+        <About/>
+
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+
+
+
+        {/* <TestRotate/> */}
         </>
     );
 }

@@ -22,36 +22,13 @@ body {
   color: white;
 }
 
-/* CSS for Introduction Component */
-.intro-block {
-  font-weight: 700; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-bottom: 130px; 
+html {
+  scroll-behavior: smooth;
 }
 
-.intro-block h1 {
-  margin: 0;
-}
-
-.intro-block p {
-  margin: 10px;
-}
-
-.intro-section {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  padding: 40px 40px;
-  
-  margin: 150px 0 0 600px; /*top right bottom left */
-  /* border: 1px white; */
-}
 
 /* CSS for TopBar Component */
-.top-bar {
+/* .top-bar {
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -60,152 +37,5 @@ body {
   padding: 20px;
   padding-left: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
+} */
 
-.top-bar-left {
-  display: flex;
-  align-items: center;
-  gap: 20px
-}
-
-.top-bar-right {
-  display:flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 20px;
-  padding-right: 100px;
-}
-
-.top-bar.right svg{
-  width: 28px;
-  height: 28px;
-}
-
-.nav-link {
-  font-family: "Pinocchio", sans-serif;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-
-  display: flex;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
-.nav-link:hover {
-    transform: translateY(-5px);
-}
-
-.nav-link-animation {
-  animation: slideIn 1.5s ease-out forwards;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/*CSS for profile picture*/
-
-.profile-container {
-  position:relative;
-  width:250px;
-  height:250px;
-}
-.profile-image{
-  height: 250px;
-  width: 250px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-.profile-border {
-  position: absolute;
-  top:0;
-  left:0;
-  width:252px;
-  height:252px;
-  pointer-events: none;
-}
-
-/* CSS for about me*/
-
-.about-container {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 50px 0px 0px 200px;
-  max-width: 500px;
-}
-
-.about-heading {
-  display:flex;
-  align-items: center;
-  gap:20px;
-}
-
-.about-container h2 {
-  white-space: nowrap;
-  margin:0;
-}
-
-.about-container p {
-  line-height: 1.5;
-}
-
-.about-heading-line {
-  flex-grow: 1;
-  height: 1px;
-  max-width: 500px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.background-elements {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.code-symbol {
-    position: absolute;
-    font-family: monospace;
-    font-size: 2rem;
-    opacity: 0.08;
-}
-
-.symbol-1 {
-    top: 15%;
-    left: 10%;
-}
-
-.symbol-2 {
-    top: 30%;
-    right: 15%;
-}
-
-.symbol-3 {
-    top: 60%;
-    left: 20%;
-}
-
-.symbol-4 {
-    top: 75%;
-    right: 25%;
-}
-
-.symbol-5 {
-    top: 45%;
-    left: 70%;
-}
-
-.symbol-6 {
-    top: 85%;
-    left: 45%;
-}
