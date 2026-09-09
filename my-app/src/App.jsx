@@ -4,48 +4,14 @@ import Introduction from "./components/Introduction.jsx"
 import TopBar from "./components/TopBar.jsx"
 import About from "./components/About.jsx"
 import AnimatedBackground from "./components/AnimatedBackground.jsx"
+import Projects from "./components/Projects.jsx"
 
 function App() {
 
-    //TODO - Continue Bro Code video - 1:19:57
-
-    // const fruits = [{id:1 ,name:"apple", calories: 95},
-    //         {id: 2, name:"orange", calories: 45},
-    //         {id: 3, name: "banana", calories: 105}, 
-    //         {id: 4, name:"mango", calories: 100}];
-    
-
     return(
-      
-      //add a component
-      //Important: Can only return one component unless with add a fragement <> </>
       <>
-        {/* <Footer> </Footer> 
-
-        <UserGreeting isLoggedIn = {true} userName = "Zed Saranillo"></UserGreeting>
-        
-        <Header> </Header>
-        <Food>   </Food>
-
-        <Card> </Card>
-        <Card> </Card>
-        
-        <Button> </Button>
-
-        
-        <Student name="Spongebob" age={30} isStudent={true}> </Student>
-        <Student name="Patrick" age={42} isStudent={false}> </Student>
-        <Student> </Student>
-
-        <List items ={fruits} category = "Fruits"> </List>
-        
-        <HooksPrac> </HooksPrac>
-
-        <EventsPrac> </EventsPrac>
-
-        <ColorPicker></ColorPicker>  */}
-
-        <div id = "home"/>
+      <div className="w-full max-w-full overflow-x-clip min-h-screen flex flex-col">
+      <div id = "home"/>
         <TopBar/>
         <AnimatedBackground/>
         
@@ -68,21 +34,10 @@ function App() {
         </div>
 
         <About/>
-        <About/>
-
-        <About/>
-
-        <About/>
-        <About/>
-        <About/>
-        <About/>
-        <About/>
-        <About/>
-        <About/>
+        <Projects/>
 
 
-
-        {/* <TestRotate/> */}
+        </div>
         </>
     );
 }

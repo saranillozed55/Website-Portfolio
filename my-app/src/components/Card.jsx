@@ -32,6 +32,7 @@ function Card() {
             lg:w-80
             rounded-2xl
             "
+            whileHover = {{scale:1.1}}
             src={profilePic}
             alt="Profile Picture"
             initial={{ scale: 0, opacity: 0 }}

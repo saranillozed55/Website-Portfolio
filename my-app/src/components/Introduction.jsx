@@ -1,13 +1,18 @@
+import {motion} from "motion/react"
 
 
 function Introduction() {
 
     return(
-        <div className ="
+        <motion.div className ="
         flex
         flex-col
 
-        ">
+        "
+        initial = {{opacity:0}}
+        viewPort = {{once:true}}
+        whileInView={{opacity: 1}}
+        transition = {{duration: 2}}>
             <h1 className ="
         
             text-4xl
@@ -17,13 +22,13 @@ function Introduction() {
 
             "
             >Hi, I'm Zed</h1>
-            <p className ="
+            <motion.p className ="
             mt-2
-            md:pl-2
+            md:pl-2"
             
-            "> Software Engineer @ SJSU</p>
+            > Software Engineer @ SJSU</motion.p>
 
-        </div>
+        </motion.div>
     );
 }
 

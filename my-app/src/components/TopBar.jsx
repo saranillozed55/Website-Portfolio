@@ -11,8 +11,9 @@ function TopBar() {
         flex
         items-center
         justify-between
-        px-6
+        px-4
         pt-4
+        sm:pt-2
         md:pt-6
         lg:pt-6
         
