@@ -31,8 +31,9 @@ function App() {
         ">
           <Card/>
           <Introduction/>
-        </div>
 
+        </div>
+        
         <About/>
         <Projects/>
 

@@ -8,12 +8,15 @@ function About() {
         <motion.div initial = {{opacity:0, y:50}} 
         whileInView = {{opacity : 1}} 
         viewport = {{once:true, amount: 0.3}}
-        id = "about">
-            <span className ="
+        id = "about"
+        className = "w-full">
+            <div className ="
             flex
             flex-col
             gap-3
-            px-100
+            max-w-4xl
+            mx-auto
+            px-6
             ">
                 <div className ="
                 text-4xl
@@ -26,7 +29,7 @@ function About() {
                     I have mostly made projects in games and web development, but I am always trying to improve my skills
                     and learn new technologies to become a better developer!
                 </p>
-            </span>
+            </div>
         </motion.div>
     );
 }
