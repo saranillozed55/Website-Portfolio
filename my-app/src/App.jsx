@@ -3,43 +3,45 @@ import Card from "./components/Card.jsx"
 import Introduction from "./components/Introduction.jsx"
 import TopBar from "./components/TopBar.jsx"
 import About from "./components/About.jsx"
-import AnimatedBackground from "./components/AnimatedBackground.jsx"
 import Projects from "./components/Projects.jsx"
+import GithubCalendar from "./components/GithubCalendar.jsx"
 
 function App() {
 
     return(
       <>
-      <div className="w-full max-w-full overflow-x-clip min-h-screen flex flex-col">
-      <div id = "home"/>
-        <TopBar/>
-        <AnimatedBackground/>
-        
+      <main>
+        <div className="max-w-full min-h-screen flex flex-col">
+          <div id = "home"/>
+            <TopBar/>        
 
-        <div className ="
-        flex
-        flex-col
-        md:flex-row
-        items-center
-        justify-center
-        gap-12
-        min-h-screen
-        pt-20
-        md:pt-0
-        px-4
-        -mt-40
-        ">
-          <Card/>
-          <Introduction/>
+            <div className ="
+            flex
+            flex-col
+            md:flex-row
+            items-center
+            justify-center
+            gap-12
+            min-h-[70dvh]
+            pt-20
+            md:pt-0
+            px-4
+            "> <Card/>
+              <Introduction/> 
+            </div>
+            
+            <div className = "flex flex-col gap-50">
+              <section>
+                <About/>
+              </section>
 
+              <section>          
+                <Projects/>
+              </section>  
+            </div>
         </div>
-        
-        <About/>
-        <Projects/>
-
-
-        </div>
-        </>
+      </main>
+      </>
     );
 }
 

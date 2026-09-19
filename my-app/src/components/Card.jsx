@@ -22,8 +22,7 @@ function Card() {
 
     return(
         <>
-        
-        <div>
+        <article>
             <motion.img
             className="
             w-48
@@ -37,10 +36,8 @@ function Card() {
             alt="Profile Picture"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-    />
-
-            
-        </div>
+    />      
+        </article>
         </>
     );
 }

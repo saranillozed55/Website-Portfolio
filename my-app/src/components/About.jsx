@@ -14,17 +14,16 @@ function About() {
             flex
             flex-col
             gap-3
-            max-w-4xl
+            max-w-5xl
             mx-auto
             px-6
             ">
-                <div className ="
-                text-4xl
-                ">
-                    <h2>/ About me</h2>
+                <div className ="flex items-end ">
+                    <h2 className="text-4xl">/ About me</h2>
+                    <span className = "flex-1 border-b border-dotted border-gray-300 mx-2 mb-1"></span>
                 </div>
 
-                <p className = "about-text">
+                <p className = "">
                     Hello, my name is Zed Saranillo and I'm currently a San Jose State University student studying Software Engineering.
                     I have mostly made projects in games and web development, but I am always trying to improve my skills
                     and learn new technologies to become a better developer!

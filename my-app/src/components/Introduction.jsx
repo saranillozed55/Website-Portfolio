@@ -7,8 +7,8 @@ function Introduction() {
         <motion.div className ="
         flex
         flex-col
-
         "
+        
         initial = {{opacity:0}}
         viewPort = {{once:true}}
         whileInView={{opacity: 1}}
@@ -21,7 +21,7 @@ function Introduction() {
             lg:text-7xl
 
             "
-            >Hi, I'm Zed</h1>
+            >Hi, I'm <span className = "text-blue-400">Zed</span></h1>
             <motion.p className ="
             mt-2
             md:pl-2"
